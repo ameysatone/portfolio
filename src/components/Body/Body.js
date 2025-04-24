@@ -35,7 +35,7 @@ const Body = () => {
             <i className="fab fa-github fa-2x"></i>
           </a>
           <a 
-            href="https://twitter.com/ganeshderkar_" 
+            href="https://x.com/_GaneshDerkar" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-gray-700 dark:text-gray-300 hover:text-blue-500 transition-colors"
