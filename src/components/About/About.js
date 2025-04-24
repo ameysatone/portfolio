@@ -9,7 +9,7 @@ const About = () => {
        <ul className="list-disc ml-6 text-lg text-gray-700 dark:text-gray-300 mb-8 space-y-2">
          <li>Hi, I'm Ganesh Derkar, a passionate developer with experience in React.js.</li>
          <li>I love creating dynamic and responsive web applications.</li>
-         <li>Currently studying at MIT Academy of Engineering, Computer Engineering program.</li>
+         <li>Currently studying at MIT Academy of Engineering, Computer Engineering.</li>
        <li>I have a strong foundation in various technologies.</li>
          <li>Always eager to learn and explore new tools and frameworks.</li>
        </ul>
