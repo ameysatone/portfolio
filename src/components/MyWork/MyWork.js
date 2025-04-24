@@ -7,7 +7,7 @@ const allProjects = [
   {
     title: 'Food delivery App',
     description: 'Food Delivery Application using react js Technologies Used React.js HTML CSS JavaScript API integration Key Features React Router DOM: Used for client-side routing. useState and useEffect: Leveraged React hooks for managing state and side effects. Custom Hooks: Created custom hooks to abstract and reuse stateful logic across components.',
-    image: '/assects/fooddeli.jpg',
+    image: '/assects/fooddeli.png',
     githubLink: 'https://github.com/GaneshDerkar18/food-delivery-app',
     demoLink: '#',
   },
