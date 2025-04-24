@@ -23,7 +23,7 @@ const allProjects = [
     description: 'Frontend using react backend using firebase live link will be availabe soon as project is fully completed',
     image: '/assects/netflixgpt.png',
     githubLink: 'https://github.com/GaneshDerkar18/NetflixGpt',
-    demoLink: 'https://example.com/demo3',
+    demoLink: '#',
   },
   {
     title: 'devTender',
@@ -37,7 +37,7 @@ const allProjects = [
     description: 'Description for Deep Learning Project 1',
     image: 'https://via.placeholder.com/300',
     githubLink: 'https://github.com/your-repo/project5',
-    demoLink: 'https://example.com/demo5',
+    demoLink: '#',
   },
 
 ];
@@ -76,16 +76,16 @@ const Work = () => {
                     GitHub
                   </a>
                 )}
-                {project.demoLink && (
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-600 dark:text-green-400 hover:underline"
-                  >
-                    Live Demo
-                  </a>
-                )}
+                {project.demoLink && project.demoLink !== '#' && (
+    <a
+      href={project.demoLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-green-600 dark:text-green-400 hover:underline"
+    >
+      Live Demo
+    </a>
+  )}
               </div>
             </div>
             
