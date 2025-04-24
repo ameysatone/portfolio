@@ -20,7 +20,7 @@ const allProjects = [
   },
   {
     title: 'NetflixGpt',
-    description: 'Frontend using react backend using firebase',
+    description: 'Frontend using react backend using firebase live link will be availabe soon as project is fully completed',
     image: '/assects/netflixgpt.png',
     githubLink: 'https://github.com/GaneshDerkar18/NetflixGpt',
     demoLink: 'https://example.com/demo3',
@@ -30,7 +30,7 @@ const allProjects = [
     description: 'backend using node js express js and mongodb',
     image: 'https://via.placeholder.com/300',
     githubLink: 'https://github.com/GaneshDerkar18/devTender',
-    demoLink: 'https://example.com/demo4',
+    demoLink: '#',
   },
   {
     title: 'Project 5',
