@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import ThemeToggle from './ThemeToggle'; // Adjust the import path as needed
+import ThemeToggle from './ThemeToggle'; // Adjust path as needed
 
 const Header = () => {
   return (
@@ -9,33 +8,27 @@ const Header = () => {
       <div>
         <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-lg">
           <li>
-            <Link 
-              to="/" 
+            <a 
+              href="#home" 
               className="text-gray-900 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link 
-              to="/about" 
+            <a 
+              href="#about" 
               className="text-gray-900 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link 
-              to="/mywork" 
+            <a 
+              href="#work" 
               className="text-gray-900 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
               My Work
-            </Link>
+            </a>
           </li>
-          <li>
-            <Link 
-              to="/contact" 
-              className="text-gray-900 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
-              Contact Me
-            </Link>
-          </li>
+          
         </ul>
       </div>
       <ThemeToggle />

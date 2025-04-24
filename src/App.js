@@ -1,66 +1,52 @@
-
 import './App.css';
 import Header from './components/Header/Header';
 import { lazy, Suspense } from 'react';
-import {createBrowserRouter,RouterProvider,Outlet} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Router components
 
+// Lazy load components
+const Body = lazy(() => import('./components/Body/Body'));
+const About = lazy(() => import('./components/About/About'));
+const Contact = lazy(() => import('./components/Contact/Contact'));
+const Work = lazy(() => import('./components/MyWork/MyWork'));
+const MoreAbout = lazy(() => import('./components/About/moreabout')); // Import MoreAbout here
 
-
-const Body = lazy(()=>import( './components/Body/Body'));
-const About = lazy(()=>import('./components/About/About'));
-const Contact = lazy(()=>import('./components/Contact/Contact'));
-const Work = lazy(()=>import('./components/MyWork/MyWork'));
 function App() {
   return (
-    <div >
-    
-      <Header />
-      <Outlet />
-    </div>
+    <Router>
+      <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+        <Header />
+
+        <Suspense fallback={<h1 className="p-4">Loading Body...</h1>}>
+          <section id="home">
+            <Body />
+          </section>
+        </Suspense>
+
+        <Suspense fallback={<h1 className="p-4">Loading About...</h1>}>
+          <section id="about">
+            <About />
+          </section>
+        </Suspense>
+
+        <Suspense fallback={<h1 className="p-4">Loading Work...</h1>}>
+          <section id="work">
+            <Work />
+          </section>
+        </Suspense>
+
+        {/* <Suspense fallback={<h1 className="p-4">Loading Contact...</h1>}>
+          <section id="contact">
+            <Contact />
+          </section>
+        </Suspense> */}
+
+        {/* Define route for moreabout */}
+        <Routes>
+          <Route path="/moreabout" element={<MoreAbout />} /> {/* Correct route */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
-const appRouter = createBrowserRouter([
-  {
-    path:"/",
-    element: <App />,
-    children: [
-      {
-        path:"/",
-        element:(<Suspense fallback={<h1>loading</h1>}>
-        <Body />
-        </Suspense>)
-      },
-      {
-        path:"/about",
-        element:
-        (<Suspense fallback={<h1>loading</h1>}>
-          <About />
-          </Suspense>)
-      },
-      {
-        path:"/mywork",
-        element:
-        (<Suspense fallback={<h1>loading</h1>}>
-          <Work />
-          </Suspense>)
-      },
-      {
-        path:"/contact",
-        element:
-        (<Suspense fallback={<h1>loading</h1>}>
-          <Contact />
-          </Suspense>)
-      }
-    ]
-  }
-])
-
-
-function main(){
-  return(
-    <RouterProvider router={appRouter} />
-  )
-}
-
-export default main;
+export default App;

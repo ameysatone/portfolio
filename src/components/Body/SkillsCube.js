@@ -12,7 +12,7 @@ const SkillsCube = () => {
             <i className="fab fa-react fa-3x text-blue-600"></i> {/* React icon */}
           </div>
           <div className="face back flex items-center bg-opacity-80 justify-center">
-            <i className="fab fa-cplusplus fa-3x text-blue-700"></i> {/* C++ icon */}
+            <i className="fab fa-aws fa-3x text-blue-700"></i> {/* C++ icon */}
           </div>
           <div className="face left flex items-center bg-opacity-80 justify-center">
             <i className="fab fa-js-square fa-3x text-yellow-500"></i> {/* JavaScript icon */}
@@ -21,7 +21,8 @@ const SkillsCube = () => {
             <i className="fab fa-python fa-3x text-yellow-400"></i> {/* Python icon */}
           </div>
           <div className="face top flex items-center bg-opacity-80 justify-center">
-            <i className="fab fa-css3-alt fa-3x text-blue-500"></i> {/* CSS icon */}
+            <i className="fab fa-linux fa-3x text-blue-500"></i> {/* linux icon */}
+            {/* <FontAwesomeIcon icon="fa-brands fa-linux" /> */}
           </div>
           <div className="face bottom flex items-center bg-opacity-80 justify-center">
             <i className="fas fa-database fa-3x text-purple-600"></i> {/* Data Science icon */}

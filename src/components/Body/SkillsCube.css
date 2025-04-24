@@ -1,6 +1,8 @@
 .cube-container {
-    perspective: 1000px;
-  }
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+
   
   .cube {
     width: 200px;
@@ -24,7 +26,7 @@
     font-size: 2rem;
     color: #333;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1);
   }
   
   /* Position faces */
@@ -32,20 +34,33 @@
   .back   { transform: rotateY(180deg) translateZ(100px); }
   .left   { transform: rotateY(-90deg) translateZ(100px); }
   .right  { transform: rotateY( 90deg) translateZ(100px); }
-  .top    { transform: rotateX( 90deg) translateZ(100px); }
-  .bottom { transform: rotateX(-90deg) translateZ(100px); }
+  .top {
+    transform: rotateX(-90deg) translateZ(100px);
+    transform-origin: center;
+  }
   
+  .bottom {
+    transform: rotateX(90deg) translateZ(100px);
+    transform-origin: center;
+  }
+
+  .top i,
+.bottom i {
+  transform: rotateZ(180deg); /* or rotateX(180deg), depending on how it appears */
+}
+
   /* Rotation animation */
   .cube {
-    animation: rotate 10s infinite linear;
+    animation: rotate 15s infinite ease-in-out;
   }
+  
   
   .cube:hover {
     animation: none; /* Stop rotation on hover */
   }
   
   /* Keyframes for rotation */
-  @keyframes rotate {
+  /* @keyframes rotate {
     from {
       transform: rotateX(0deg) rotateY(0deg);
     }
@@ -53,4 +68,18 @@
       transform: rotateX(360deg) rotateY(360deg);
     }
   }
+   */
+
+
+   @keyframes rotate {
+    0%   { transform: rotateX(0deg) rotateY(0deg); }             /* front */
+    16.6%  { transform: rotateY(90deg); }                        /* right */
+    33.2%  { transform: rotateY(180deg); }                       /* back */
+    49.8%  { transform: rotateY(270deg); }                       /* left */
+    66.4%  { transform: rotateX(-90deg); }                       /* top */
+    83%  { transform: rotateX(90deg); }                          /* bottom */
+    100% { transform: rotateX(360deg) rotateY(360deg); }         /* full spin reset */
+  }
+  
+  
   
