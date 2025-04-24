@@ -1,0 +1,2 @@
+.skills-slider{position:relative}.skills-slider-inner{animation:slide 20s linear infinite;display:flex;flex-wrap:nowrap}.skills-slider-inner.paused{animation-play-state:paused}@keyframes slide{0%{transform:translateX(0)}to{transform:translateX(-100%)}}button{background:none;border:none;cursor:pointer;font-size:1.5rem}button:hover{color:#f3f3f3}button:focus{outline:none}
+/*# sourceMappingURL=208.fa85463e.chunk.css.map*/

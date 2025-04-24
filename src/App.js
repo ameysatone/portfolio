@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Im
 // Lazy load components
 const Body = lazy(() => import('./components/Body/Body'));
 const About = lazy(() => import('./components/About/About'));
-const Contact = lazy(() => import('./components/Contact/Contact'));
+// const Contact = lazy(() => import('./components/Contact/Contact'));
 const Work = lazy(() => import('./components/MyWork/MyWork'));
 const MoreAbout = lazy(() => import('./components/About/moreabout')); // Import MoreAbout here
 
