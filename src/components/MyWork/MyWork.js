@@ -16,7 +16,7 @@ const allProjects = [
     description: 'System Design Frontend: Developed using React.js. Utilizes functional components and hooks for managing state and side effects. Styled with CSS for a classic, user-friendly interface. Features responsive design to adapt to different screen sizes. Features: Add new tasks to the list. Edit existing tasks. Delete tasks from the list. Toggle task completion status. Search functionality to filter tasks.',
     image: '/assects/todolist.png',
     githubLink: 'https://github.com/GaneshDerkar18/todo-list-react-frontend',
-    demoLink: '#',
+    demoLink: 'https://GaneshDerkar18.github.io/todo-list-react-frontend/',
   },
   {
     title: 'NetflixGpt',
