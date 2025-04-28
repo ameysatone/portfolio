@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Im
 // Lazy load components
 const Body = lazy(() => import('./components/Body/Body'));
 const About = lazy(() => import('./components/About/About'));
-// const Contact = lazy(() => import('./components/Contact/Contact'));
+const Contact = lazy(() => import('./components/Contact/Contact'));
 const Work = lazy(() => import('./components/MyWork/MyWork'));
 const MoreAbout = lazy(() => import('./components/About/moreabout')); // Import MoreAbout here
 
@@ -34,11 +34,11 @@ function App() {
           </section>
         </Suspense>
 
-        {/* <Suspense fallback={<h1 className="p-4">Loading Contact...</h1>}>
+         <Suspense fallback={<h1 className="p-4">Loading Contact...</h1>}>
           <section id="contact">
             <Contact />
           </section>
-        </Suspense> */}
+        </Suspense> 
 
         {/* Define route for moreabout */}
         <Routes>
