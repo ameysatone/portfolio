@@ -28,6 +28,13 @@ const Header = () => {
               My Work
             </a>
           </li>
+                <li>
+            <a 
+              href="#contact" 
+              className="text-gray-900 dark:text-gray-100 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+              Contact
+            </a>
+          </li>
           
         </ul>
       </div>
