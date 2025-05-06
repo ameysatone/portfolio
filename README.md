@@ -16,7 +16,7 @@ Welcome to my personal portfolio! This website serves as a showcase for my work,
 - **JavaScript (ES6+):** JavaScript is used for dynamic behavior and functionality.
 
 ### Backend (Planned):
-- **EmailJS (coming soon):** I plan to integrate EmailJS for the contact form, allowing users to send messages to my email (`ganesh.derkar.dev@gmail.com`).
+- **EmailJS (coming soon):** I plan to integrate EmailJS for the contact form, allowing users to send messages to my email .
 
 ---
 
