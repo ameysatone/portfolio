@@ -34,16 +34,18 @@ function App() {
           </section>
         </Suspense>
 
-         <Suspense fallback={<h1 className="p-4">Loading Contact...</h1>}>
-          <section id="contact">
-            <Contact />
-          </section>
-        </Suspense> 
+      
 
         {/* Define route for moreabout */}
         <Routes>
           <Route path="/moreabout" element={<MoreAbout />} /> {/* Correct route */}
         </Routes>
+
+        <Suspense fallback={<h1 className="p-4">Loading Contact...</h1>}>
+          <section id="contact">
+            <Contact />
+          </section>
+        </Suspense> 
       </div>
     </Router>
   );

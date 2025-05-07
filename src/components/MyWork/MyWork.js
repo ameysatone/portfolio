@@ -5,39 +5,40 @@ import { Link } from 'react-router-dom';
 // Flattened list of all projects
 const allProjects = [
   {
-    title: 'Food delivery App',
-    description: 'Food Delivery Application using react js Technologies Used React.js HTML CSS JavaScript API integration Key Features React Router DOM: Used for client-side routing. useState and useEffect: Leveraged React hooks for managing state and side effects. Custom Hooks: Created custom hooks to abstract and reuse stateful logic across components.',
-    image: '/assects/fooddeli.png',
-    githubLink: 'https://github.com/GaneshDerkar18/food-delivery-app',
-    demoLink: '#',
+    title: 'Graphial password Authentication',
+    description: 'It was a project given under the Minor Project. This is a password authentication system that uses Image ,Encryption to authenticate the user.',
+    image: '/assects/graphical.png',
+    
   },
   {
-    title: 'Todo-List',
-    description: 'System Design Frontend: Developed using React.js. Utilizes functional components and hooks for managing state and side effects. Styled with CSS for a classic, user-friendly interface. Features responsive design to adapt to different screen sizes. Features: Add new tasks to the list. Edit existing tasks. Delete tasks from the list. Toggle task completion status. Search functionality to filter tasks.',
-    image: '/assects/todolist.png',
-    githubLink: 'https://github.com/GaneshDerkar18/todo-list-react-frontend',
-    demoLink: 'https://GaneshDerkar18.github.io/todo-list-react-frontend/',
+    title: 'Dark web Crawler',
+    description: 'It was Project given under the Major project. This is a dark web crawler that helps to crawl the dark web and extract the data from it especially related to illegal weapons.',
+    image: '/assects/darkweb.png',
+   
   },
   {
-    title: 'NetflixGpt',
-    description: 'Frontend using react backend using firebase live link will be availabe soon as project is fully completed',
-    image: '/assects/netflixgpt.png',
-    githubLink: 'https://github.com/GaneshDerkar18/NetflixGpt',
-    demoLink: '#',
+    title: 'Invemtory managemnt system',
+    description: 'This project was given under the Software engineering course. This is a Inventory management system that helps to manage the inventory and track the stock levels.',
+    image: '/assects/image.png',
+    
   },
   {
-    title: 'devTender',
-    description: 'backend using node js express js and mongodb',
-    image: 'https://via.placeholder.com/300',
-    githubLink: 'https://github.com/GaneshDerkar18/devTender',
-    demoLink: '#',
+    title: 'professional Social Networking Site',
+    description: 'This project was given under SLIP .This is a professional social networking site where you can connect with other professionals, share your work, and find job opportunities.',
+    image: '/assects/social.png',
+    
   },
   {
-    title: 'Project 5',
-    description: 'Description for Deep Learning Project 1',
-    image: 'https://via.placeholder.com/300',
-    githubLink: 'https://github.com/your-repo/project5',
-    demoLink: '#',
+    title: 'Resume Parser',
+    description: 'It Helps to parse resume and extract information in very precise manner helpfull for HR',
+    image: '/assects/resume.png',
+    
+  },
+  {
+    title: 'Portfolio Website',
+    description: 'This showcases all my technical skills and projects',
+    image: '/assects/portfolio.png',
+    
   },
 
 ];

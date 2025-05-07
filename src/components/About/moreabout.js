@@ -4,21 +4,21 @@ const MoreAbout = () => {
   const certificates = [
     {
       title: "Hackathon",
-      description: "Completed a full-stack development course covering React, Node.js, MongoDB, and Express.",
-      image: "/assects/hackathon.png",
-      link: "/assects/hackathon.png"
+      description: "participated in a hackathon and were a part of top 10 in the national level competition held at Aissms pune.",
+      image: "/assects/hackaissms.png",
+      link: "/assects/hackaissms.png"
     },
     {
-      title: "iYMC math competion bronze",
-      description: "Recognized by Amazon for foundational cloud computing knowledge.",
-      image: "/assects/iymc.png",
-      link: "/assects/iymc.png"
+      title: "Speech competition",
+      description: "Participated in a tech speech competition and secured first place in the competition.",
+      image: "/assects/speech.png",
+      link: "/assects/speech.png"
     },
     {
-      title: "Python for Data Science",
-      description: "Completed Python and Data Science fundamentals on Coursera.",
-      image: "https://images.credly.com/images/4f264f76-9905-4b89-bcd1-0f7fda2f2fcb/Coursera_Python.png",
-      link: "https://images.credly.com/images/4f264f76-9905-4b89-bcd1-0f7fda2f2fcb/Coursera_Python.png"
+      title: "Cloud Computing",
+      description: "completed a course on Cloud Computing (Foundation, Architecture)both.",
+      image: "/assects/cloud.png",
+      link: "/assects/cloud.png"
     },
   ];
 

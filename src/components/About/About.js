@@ -7,7 +7,7 @@ const About = () => {
     <div className="flex flex-col h-screen p-8 bg-gray-100 dark:bg-gray-800">
       <h1 className="text-3xl font-bold text-gray-900  dark:text-gray-100 mb-6">About Me</h1>
        <ul className="list-disc ml-6 text-lg text-gray-700 dark:text-gray-300 mb-8 space-y-2">
-         <li>Hi, I'm Ganesh Derkar, a passionate developer with experience in React.js.</li>
+         <li>Hi, I'm Amey Satone, a passionate developer with experience in React.js.</li>
          <li>I love creating dynamic and responsive web applications.</li>
          <li>Currently studying at MIT Academy of Engineering, Computer Engineering.</li>
        <li>I have a strong foundation in various technologies.</li>
